@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+
+    int main(){
+    setlocale(LC_ALL, "portuguese");
+
+     int number01;
+     int i;
+
+
+    printf("Digite um número inteiro:");
+    scanf("%d", &number01);
+
+
+    for(i = 0; i <= number01; i++){
+
+     printf("%d \n", number01 * i);
+     }
+     
+     return 0;
+}
