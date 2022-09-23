@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+
+int main(){
+int dia , mes , ano;
+
+int numero1,numero2,numero3,numero4,numero5,numero6;
+
+  printf("Digite o dia do seu aniversario: ");
+    scanf("%d",&dia);
+
+  printf("\nDigite o mes do seu aniversario: ");
+    scanf("%d",&mes);
+
+  printf("\nDigite o ano do seu aniversario: ");
+    scanf("%d",&ano);
+
+  numero1 = (dia*100)+mes;
+  numero2 = numero1 + ano;
+  numero3 = numero2 / 100;
+  numero4 = numero2 % 100;
+  numero5 = numero3 + numero4;
+  numero6 = numero5 % 5;
+
+switch(numero6){
+    case 0:
+       printf("Timido");
+       break;
+    case 1:
+     printf("Sonhador");
+     break;
+    case 2:
+    printf("Paquerador");
+    break;
+    case 3:
+    printf("Atraente");
+    break;
+    case 4:
+    printf("Irresistivel");
+    break;
+}
+
+}
